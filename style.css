@@ -97,7 +97,7 @@ button:focus{
 }
 
 .heads{
-    background-image: url(images/heads.png);
+    background-image: url(heads.png);
 }
 
 .animate-heads{
@@ -115,7 +115,7 @@ button:focus{
 }
 
 .tails{
-    background-image: url(images/tails.png);
+    background-image: url(tails.png);
     transform: rotateY(-180deg);
 }
 

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+header {
+    background-color: #b16d1eb6;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+h2{
+    color: #b16d1eb6;
+}
+
+h3{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #b16d1eb6;
+    padding: 10px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+div.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    margin: .5em;
+    padding: .7em 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #b16d1eb6;
+    background-color: rgb(236, 223, 209);
+    border: 2px solid rgba(112,111,211,0);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+button:focus{
+    color: #b16d1eb6;
+    border: 2px solid #b16d1eb6;
+    box-shadow: 0px 0px 0px 1px rgb(211, 153, 111);
+    animation: anim-shadow .1s forwards;
+
+}
+
+.activeBetClass{
+    margin: .5em;
+    padding: .7em 1.5em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: greenyellow;
+    background-color: greenyellow;
+    border: 2px solid rgba(112,111,211,0);
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+@keyframes anim-shadow{
+    100%{
+        box-shadow: 0px 0px 50px 20px #b16d1eb6;
+    }
+}
+
+
+
+#coin{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+}
+
+#coin div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.heads{
+    background-image: url(images/heads.png);
+}
+
+.animate-heads{
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipHeads {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1800deg);
+    }
+}
+
+.tails{
+    background-image: url(images/tails.png);
+    transform: rotateY(-180deg);
+}
+
+.animate-tails{
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes flipTails {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(1620deg);
+    }
+}
+#betheads{
+    margin-left: 150px;
+}
+#bettails{
+    margin-right: 150px;
+    margin-top: -71px;
+}
+footer {
+    background-color: #b16d1eb6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #fff;
+
+}
+#score{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #b16d1eb6;
+    padding: 10px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+.losecolor{
+    color: red;
+}
+.wincolor{
+    color: green;
+}
+.colorwin{
+    color: green;
+}
+.colorlose{
+    color: red;
+}
+
+.game-container{
+    background-color: rgb(236, 223, 209);
+}
